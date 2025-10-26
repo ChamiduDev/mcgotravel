@@ -1,36 +1,150 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# McGo - Modern Travel Website
 
-## Getting Started
+A beautiful, responsive travel website built with Next.js, featuring smooth animations, modern UI/UX design, and a fully functional booking experience.
 
-First, run the development server:
+## 🌟 Features
 
+- **Responsive Design** - Optimized for desktop, tablet, and mobile devices
+- **Smooth Animations** - Scroll-triggered animations with Intersection Observer API
+- **Dynamic Navbar** - Glassy background effect on scroll, smooth section navigation
+- **Hero Section** - Eye-catching hero with gradient text effects
+- **Category Section** - Service showcase with hover animations
+- **Top Selling Destinations** - Interactive destination cards
+- **Booking Steps** - Step-by-step booking process with trip cards
+- **Kinetic Testimonials** - Infinite scrolling testimonials in opposite directions
+- **About Page** - Project information and company attribution
+- **Contact Section** - Beautiful contact form with company information
+- **Modern Footer** - Comprehensive site navigation and social links
+
+## 🛠️ Tech Stack
+
+- **Next.js 15** - React framework for production
+- **TypeScript** - Type-safe JavaScript
+- **Tailwind CSS** - Utility-first CSS framework
+- **Volkhov & Inter Fonts** - Custom typography
+- **Next.js Font Optimization** - Optimized web fonts
+- **Intersection Observer API** - Scroll-based animations
+
+## 📁 Project Structure
+
+```
+jadoo/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx       # Root layout with font configuration
+│   │   ├── page.tsx          # Main page component
+│   │   └── globals.css       # Global styles and keyframes
+│   └── components/
+│       ├── Navbar.tsx        # Fixed navigation bar
+│       ├── Hero.tsx          # Hero section
+│       ├── Category.tsx      # Service categories
+│       ├── TopSelling.tsx    # Top selling destinations
+│       ├── BookingSteps.tsx  # Booking process section
+│       ├── KineticTestimonials.tsx  # Scrolling testimonials
+│       ├── About.tsx         # About section
+│       ├── Contact.tsx       # Contact section
+│       ├── Footer.tsx        # Footer component
+│       └── ScrollAnimation.tsx  # Reusable animation wrapper
+└── public/
+    ├── logogo.png           # Logo
+    ├── girl.png             # Hero image
+    ├── Decore.png           # Hero decoration
+    └── *.png                # Various icons and images
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ installed
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd jadoo
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📝 Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint
 
-## Learn More
+## 🎨 Design Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Color Scheme**: Orange and blue gradient theme
+- **Typography**: Volkhov for headings, Inter for body text
+- **Animations**: Fade-in and slide-up effects on scroll
+- **Hover Effects**: Card lifting, shadow enhancement, color transitions
+- **Mobile Menu**: Slide-down navigation for mobile devices
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔗 Navigation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The navbar includes smooth scrolling to sections:
+- **Destinations** - Category section
+- **Hotel** - Category section
+- **Flights** - Top selling destinations
+- **Bookings** - Booking steps section
+- **About** - About page
+- **Login/Sign Up** - Contact section
 
-## Deploy on Vercel
+## 📦 Key Components
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### ScrollAnimation
+Reusable wrapper component that applies fade-in and slide-up animations when elements enter the viewport.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Kinetic Testimonials
+Infinitely scrolling testimonials with two rows moving in opposite directions for a dynamic effect.
+
+### Dynamic Navbar
+Navbar background becomes glassy on scroll while maintaining transparency at the top of the page.
+
+## 🌐 Deployment
+
+### Deploy on Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/hello-world)
+
+Or use the Vercel CLI:
+```bash
+npm i -g vercel
+vercel
+```
+
+## 📄 License
+
+This project is a sample web design created by **MC Digital Innovate Software Company**.
+
+## 👨‍💻 Created By
+
+**MC Digital Innovate Software Company**
+
+Visit: [https://mcdi.vercel.app](https://mcdi.vercel.app)
+
+---
+
+**Note**: This is a sample web design showcasing modern web development techniques and responsive design principles.

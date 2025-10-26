@@ -1,65 +1,115 @@
-import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Category from "@/components/Category";
+import TopSelling from "@/components/TopSelling";
+import BookingSteps from "@/components/BookingSteps";
+import KineticTestimonials from "@/components/KineticTestimonials";
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+
+const testimonials = [
+  {
+    name: 'Ava Thompson',
+    handle: '@ava_thompson',
+    review: 'McGo is a game-changer! The booking process is smooth, and the destinations are absolutely stunning.',
+    avatar: null,
+    gradient: 'from-pink-400 to-rose-500',
+    initials: 'AT',
+  },
+  {
+    name: 'Elijah Carter',
+    handle: '@elijah_ui',
+    review: 'Absolutely mesmerizing! The attention to detail in McGo\'s service is incredible.',
+    avatar: null,
+    gradient: 'from-blue-400 to-cyan-500',
+    initials: 'EC',
+  },
+  {
+    name: 'Sophia Martinez',
+    handle: '@sophia_codes',
+    review: 'As a frequent traveler, I love how intuitive and powerful McGo is. It\'s a must-have for planning trips!',
+    avatar: null,
+    gradient: 'from-purple-400 to-indigo-500',
+    initials: 'SM',
+  },
+  {
+    name: 'Michael Brown',
+    handle: '@michaelb_dev',
+    review: 'This changed the way I travel. The booking experience is top-notch!',
+    avatar: null,
+    gradient: 'from-orange-400 to-amber-500',
+    initials: 'MB',
+  },
+  {
+    name: 'Liam Anderson',
+    handle: '@liamdesigns',
+    review: 'The best travel platform I\'ve ever used! Seamless booking and amazing destinations.',
+    avatar: null,
+    gradient: 'from-green-400 to-emerald-500',
+    initials: 'LA',
+  },
+  {
+    name: 'Olivia Hayes',
+    handle: '@olivia_h',
+    review: 'This is absolutely mind-blowing. McGo makes travel planning effortless and fun!',
+    avatar: null,
+    gradient: 'from-blue-500 to-violet-500',
+    initials: 'OH',
+  },
+  {
+    name: 'Daniel Lee',
+    handle: '@daniel_dev',
+    review: 'Brilliant execution! The user experience feels effortless and elegant.',
+    avatar: null,
+    gradient: 'from-teal-400 to-cyan-500',
+    initials: 'DL',
+  },
+  {
+    name: 'Sarah Green',
+    handle: '@sarahgreen',
+    review: 'I can\'t stop recommending McGo. It makes travel planning feel premium!',
+    avatar: null,
+    gradient: 'from-rose-400 to-pink-500',
+    initials: 'SG',
+  },
+  {
+    name: 'Mia Patel',
+    handle: '@miapatel',
+    review: 'McGo took my travel experience to the next level. Highly recommend!',
+    avatar: null,
+    gradient: 'from-yellow-400 to-orange-500',
+    initials: 'MP',
+  },
+  {
+    name: 'James Walker',
+    handle: '@jameswalker',
+    review: 'This is the future of travel booking! Can\'t believe something this good exists.',
+    avatar: null,
+    gradient: 'from-indigo-500 to-purple-500',
+    initials: 'JW',
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+    <div className="min-h-screen bg-white">
+      <Navbar />
+      <Hero />
+      <Category />
+      <TopSelling />
+      <BookingSteps />
+      <KineticTestimonials 
+        testimonials={testimonials}
+        cardClassName="hover:scale-105 shadow-lg"
+        avatarClassName="ring-2 ring-orange-500"
+        speed={1.5}
+        title="Customer Reviews"
+        subtitle="What our users think about McGo"
+      />
+      <About />
+      <Contact />
+      <Footer />
     </div>
   );
 }
