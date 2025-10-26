@@ -28,7 +28,7 @@ A beautiful, responsive travel website built with Next.js, featuring smooth anim
 ## 📁 Project Structure
 
 ```
-jadoo/
+mcgotravel/
 ├── src/
 │   ├── app/
 │   │   ├── layout.tsx       # Root layout with font configuration
@@ -64,7 +64,7 @@ jadoo/
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd jadoo
+cd mcgotravel
 ```
 
 2. Install dependencies:
